@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <script src="selector.js"></script>
+    <script src="script.js"></script>
+
+    <div class="container">
+      <header>
+        <h1>CryptoStone</h1>
+      </header>
+
+      <form>
+        <input type="text" id="crypto-search" list="currency" placeholder="Select a currency" required>
+        <datalist id="currency">
+          
+        </datalist>
+        <input type="submit" value="submit" id="sub-btn">
+        <div id="results" class="hidden" >
+          <ul id="results-list">
+
+          </ul>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
