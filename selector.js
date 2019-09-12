@@ -24,3 +24,4 @@ function selectCoins() {
       alert("Something went wrong :(");
     });
 }
+$(selectCoins)
