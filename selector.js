@@ -1,7 +1,7 @@
 'use strict'
 
 function selectResults(responseJson) {
-  console.log(responseJson)
+  
   for (let i = 0; i < responseJson.length; i++) {
     $("#currency").append(
       `<option value=${responseJson[i].id}>`
@@ -24,4 +24,5 @@ function selectCoins() {
       alert("Something went wrong :(");
     });
 }
+
 $(selectCoins)
