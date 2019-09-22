@@ -1,3 +1,29 @@
+html, body {
+    backdrop-filter: blur(3px);
+ 
+}
+
+body {
+  height: 100%;
+  font-family: 'Cairo', sans-serif;
+  background-image: url('https://wallpapercave.com/wp/wp2668816.jpg');
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  
+}
+
+.blackbox {
+  background-color: rgba(0, 0, 0, .65);
+  width: 95%;
+  margin: 0 auto;
+  border: 1.5px solid grey;
+}
+
+
+
 header {
   text-align: center;
 }
@@ -8,29 +34,83 @@ li {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .hidden {
   display: none;
 }
 
+.about-section {
+  text-align: center;
+  padding-bottom: 55px;
+}
+
+.about-btn {
+  color: white;
+  width: 150px;
+  margin-bottom: 15px;
+  background: none;
+  border: 1.5px solid white;
+
+}
+
+#about {
+  width: 80%;
+  border: 1.5px solid white;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#about a {
+  font-weight: bolder;
+}
+
 form {
   text-align: center;
 }
 
-#results {
-  width: 80%;
-  margin: 0 auto;
+input {
+  color: white;
+  font-family: 'Cairo', sans-serif;
+  border: 1.5px solid white;
+  background-color: black;
+  background: none;
 }
 
+#crypto-search {
+  width: 145px;
+}
+
+#sub-btn {
+  width: 115px;
+}
+
+
+
+::placeholder {
+  color: white;
+  text-align: center;
+}
+
+
+
 .result-list {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .remove {
-  width: 75px;
+  color: white;
+  background: none;
+  font-family: 'Cairo', sans-serif;
+  border: 1px solid white;
+  width: 65px;
+  height: 30px;
 }
 
 #news {
@@ -59,13 +139,21 @@ form {
   font-style: italic;
   font-weight: bold;
   font-size: 20px;
-
-
 }
+
+.description {
+  font-size: 15px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
 
 .article-img {
   height: 125px;
-  width: 150px;
-  border: 2px solid black;
+  border: 1.5px solid white;
   float: left;
+  opacity: 0.8;
 }
