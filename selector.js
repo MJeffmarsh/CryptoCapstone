@@ -9,6 +9,7 @@ function selectResults(responseJson) {
 }
 
 function selectCoins() {
+  //Fills datalist with currencies to choose from
   const selectURL = "https://api.coingecko.com/api/v3/coins/list"
 
   

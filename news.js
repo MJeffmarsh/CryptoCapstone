@@ -13,7 +13,7 @@ function displayNews(responseJson) {
   
 
    for (let i = 0; i < responseJson.articles.length; i++) {
-
+    //displays headlines w/thumbnail
      $('#news').append(
   `<div class="article-container">
     <a href="${responseJson.articles[i].url}">

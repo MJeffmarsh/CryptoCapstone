@@ -1,5 +1,5 @@
 
-
+/*Universal*/
 body {
   height: 100%;
   font-family: 'Cairo', sans-serif;
@@ -47,6 +47,8 @@ a:focus {
   display: none;
 }
 
+/*About Section*/
+
 .about-section {
   text-align: center;
   padding-bottom: 55px;
@@ -72,6 +74,8 @@ a:focus {
 #about a {
   font-weight: bolder;
 }
+
+/*Search*/
 
 form {
   text-align: center;
@@ -114,6 +118,7 @@ input {
   text-align: center;
 }
 
+/*Currency Results/Data*/
 
 .result-list {
   display: inline-flex;
@@ -131,6 +136,8 @@ input {
   width: 65px;
   height: 30px;
 }
+
+/*News*/
 
 #news {
   padding-top: 50px;
@@ -173,6 +180,8 @@ input {
   opacity: 0.8;
   
 }
+
+/*Media Queries*/
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 

@@ -2,7 +2,7 @@
 
 
 function displayResults(responseJson) {
-    
+    //displays currency info
       $('#results').prepend(
       ` <ul class="result-list">
         <li><h2>${responseJson.name}<img src="${responseJson.image.thumb}"></h2></li>
@@ -28,7 +28,7 @@ function displayResults(responseJson) {
 
 
 function searchCoins(id) {
-
+//API that grabs currency info
   const searchURL = `https://api.coingecko.com/api/v3/coins/${id}`;
 
   fetch(searchURL)
