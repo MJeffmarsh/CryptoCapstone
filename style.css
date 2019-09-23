@@ -1,18 +1,17 @@
-html, body {
-    backdrop-filter: blur(3px);
- 
-}
+
 
 body {
   height: 100%;
   font-family: 'Cairo', sans-serif;
-  background-image: url('https://wallpapercave.com/wp/wp2668816.jpg');
+  background-image: url('../resources/background.jpg');
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
+  backdrop-filter: blur(3px);
+}
 
-
-  
+.container {
+  height: auto;
 }
 
 .blackbox {
@@ -21,7 +20,6 @@ body {
   margin: 0 auto;
   border: 1.5px solid grey;
 }
-
 
 
 header {
@@ -35,6 +33,14 @@ li {
 a {
   text-decoration: none;
   color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  text-decoration: underline;
 }
 
 .hidden {
@@ -77,23 +83,36 @@ input {
   border: 1.5px solid white;
   background-color: black;
   background: none;
+  font-size: 12pt;
 }
 
-#crypto-search {
-  width: 145px;
+.crypto-search {
+  height: 50px;
+  width: 165px;
 }
 
-#sub-btn {
-  width: 115px;
+
+.sub-btn {
+  height: 55px;
+  width: 135px;
+  
 }
 
+.sub-btn:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.sub-btn:focus {
+  font-weight: bolder;
+  text-decoration: underline;
+}
 
 
 ::placeholder {
   color: white;
   text-align: center;
 }
-
 
 
 .result-list {
@@ -128,12 +147,10 @@ input {
   flex-direction: column;
   padding-top: 20px; 
   width: 80%;
-  margin: 0 auto;
+  margin: auto;
 }
 
-.articles-list {
-  transform: translateX(7.5px);
-}
+
 
 .title {
   font-style: italic;
@@ -145,15 +162,39 @@ input {
   font-size: 15px;
 }
 
-a:hover {
-  text-decoration: underline;
+.thumbnail{
+  padding-left: 2px;
 }
 
-
-
-.article-img {
+.thumbnail img {
   height: 125px;
   border: 1.5px solid white;
-  float: left;
+  float: right;
   opacity: 0.8;
+  
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+  .crypto-search {
+  height: 40px;
+  width: 145px;
+}
+
+  .sub-btn {
+  height: 45px;
+  width: 115px;
+  
+}
+
+  .thumbnail img {
+  height: 80px;
+  
+  
+  }
+  .articles-list {
+  margin-right: 25px; 
+
+  }
+
 }

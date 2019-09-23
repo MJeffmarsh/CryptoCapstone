@@ -50,9 +50,9 @@ function searchCoins(id) {
 
 function formSubmit() {
     $('form').submit(event => { event.preventDefault();
-    let cryptoSearch = $("#crypto-search").val();
+    let cryptoSearch = $(".crypto-search").val();
     searchCoins(cryptoSearch);
-    $('#crypto-search').val('')
+    $('.crypto-search').val('')
     });
   }
 

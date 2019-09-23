@@ -18,7 +18,9 @@ function displayNews(responseJson) {
   `<div class="article-container">
     <a href="${responseJson.articles[i].url}">
        <div class="articles">
-       <img class="article-img" src="${responseJson.articles[i].urlToImage}">
+       <div class="thumbnail">
+       <img src="${responseJson.articles[i].urlToImage}">
+       </div>
         <ul class="articles-list">
           <li class="title">${responseJson.articles[i].title}</li>
           <li class="description">${responseJson.articles[i].description}</li>
