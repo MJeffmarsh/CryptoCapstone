@@ -3,7 +3,7 @@
 body {
   height: 100%;
   font-family: 'Cairo', sans-serif;
-  background-image: url('/resources/background.jpg');
+  background-image: url('resources/background.jpg');
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
