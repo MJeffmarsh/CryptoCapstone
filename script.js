@@ -6,9 +6,12 @@ function displayResults(responseJson) {
       $('#results').prepend(
       ` <ul class="result-list">
         <li><h2>${responseJson.name}<img src="${responseJson.image.thumb}"></h2></li>
-        <li>Rank: ${responseJson.coingecko_rank}</li>
-        <li>Current Price: $${responseJson.market_data.current_price.usd}</li>
-        <li>Market Cap: $${responseJson.market_data.market_cap.usd}</li>
+        <li class="data">Rank</li> 
+        <li>${responseJson.coingecko_rank}</li>
+        <li class="data">Current Price</li>
+        <li>$${responseJson.market_data.current_price.usd}</li>
+        <li class="data">Market Cap</li>
+        <li>$${responseJson.market_data.market_cap.usd}</li>
         <li><button class="remove">Remove</button></li>
         
         </ul>

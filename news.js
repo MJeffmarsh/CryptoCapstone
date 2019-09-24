@@ -16,7 +16,7 @@ function displayNews(responseJson) {
     //displays headlines w/thumbnail
      $('#news').append(
   `<div class="article-container">
-    <a href="${responseJson.articles[i].url}">
+    <a href="${responseJson.articles[i].url}" target="_blank">
        <div class="articles">
        <div class="thumbnail">
        <img src="${responseJson.articles[i].urlToImage}">

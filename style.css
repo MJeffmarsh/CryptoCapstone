@@ -3,11 +3,11 @@
 body {
   height: 100%;
   font-family: 'Cairo', sans-serif;
-  background-image: url('resources/background.jpg');
+  background-image: url('/resources/background.jpg');
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
-  backdrop-filter: blur(3px);
+  
 }
 
 .container {
@@ -15,10 +15,11 @@ body {
 }
 
 .blackbox {
-  background-color: rgba(0, 0, 0, .65);
+  background-color: rgba(0, 0, 0, .75);
   width: 95%;
   margin: 0 auto;
   border: 1.5px solid grey;
+  backdrop-filter: blur(3px);
 }
 
 
@@ -120,12 +121,23 @@ input {
 
 /*Currency Results/Data*/
 
+.results {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
 .result-list {
   display: inline-flex;
   flex-direction: column;
   text-align: left;
   padding-left: 10px;
   padding-right: 10px;
+  font-size: 20px;
+}
+
+.data {
+  font-weight: bolder;
 }
 
 .remove {
@@ -135,6 +147,16 @@ input {
   border: 1px solid white;
   width: 65px;
   height: 30px;
+}
+
+.remove:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.remove:focus {
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 /*News*/
@@ -153,6 +175,7 @@ input {
   display: flex;
   flex-direction: column;
   padding-top: 20px; 
+  padding-bottom: 20px;
   width: 80%;
   margin: auto;
 }
@@ -196,9 +219,15 @@ input {
   
 }
 
+  .articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .thumbnail img {
-  height: 80px;
-  
+    height: 100px;
+    float: none;
   
   }
   .articles-list {
